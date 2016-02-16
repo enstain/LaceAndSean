@@ -1,0 +1,147 @@
+// == CSS == //
+@mixin clearfix() {
+  zoom: 1;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+  -webkit-box-shadow: $x $y $blur $spread $color;
+  -moz-box-shadow: $x $y $blur $spread $color;
+  box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin text-shadow($x, $y, $spr, $color) {
+  -webkit-text-shadow: $x $y $spr $color;
+  -moz-text-shadow: $x $y $spr $color;
+  -o-text-shadow: $x $y $spr $color;
+  text-shadow: $x $y $spr $color;
+}
+
+@mixin transition($duration, $type, $time) {
+  -webkit-transition: $duration $type $time;
+  -moz-transition: $duration $type $time;
+  -o-transition: $duration $type $time;
+  transition: $duration $type $time;
+}
+
+@mixin filter($filter-type,$filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+// == Components == //
+@mixin btn($height, $padding) {
+	display: inline-block;
+	height: $height;
+	padding: 0 $padding;
+	line-height: $height;
+	vertical-align: middle;
+	border-radius: $height/2+1px;
+}
+
+@mixin button-size($height, $padding-horizontal, $font-size) {
+  height: $height;
+  padding-right: $padding-horizontal;
+  padding-left: $padding-horizontal;
+  font-size: $font-size;
+  line-height: $height - 1;
+}
+
+@mixin button-flat($background, $color, $color-hover: $color) {
+  background-color: $background;
+  color: $color;
+
+  &:hover {
+    background-color: lighten($background, 5%);
+    color: $color-hover;
+  }
+}
+
+@mixin button-outline($border-color, $color, $border-color-hover: $border-color, $color-hover: $color) {
+  border-color: $border-color;
+  color: $color;
+
+  &:hover {
+    border-color: $border-color-hover;
+    color: $color-hover;
+  }
+}
+
+@mixin linear-gradient($top-color, $bottom-color) {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, $bottom-color),
+    color-stop(1, $top-color)
+  );
+  background-image: -o-linear-gradient(bottom, $bottom-color 0%, $top-color 100%);
+  background-image: -moz-linear-gradient(bottom, $bottom-color 0%, $top-color 100%);
+  background-image: -webkit-linear-gradient(bottom, $bottom-color 0%, $top-color 100%);
+  background-image: -ms-linear-gradient(bottom, $bottom-color 0%, $top-color 100%);
+  background-image: linear-gradient(to bottom, $bottom-color 0%, $top-color 100%);
+}
+
+@mixin linear-gradient-horizontal($right-color, $left-color) {
+  background-image: -webkit-gradient(
+    linear,
+    right bottom,
+    left bottom,
+    color-stop(0, $left-color),
+    color-stop(1, $right-color)
+  ) !important;
+  background-image: -o-linear-gradient(left, $left-color 0%, $right-color 100%) !important;
+  background-image: -moz-linear-gradient(left, $left-color 0%, $right-color 100%) !important;
+  background-image: -webkit-linear-gradient(left, $left-color 0%, $right-color 100%) !important;
+  background-image: -ms-linear-gradient(left, $left-color 0%, $right-color 100%) !important;
+  background-image: linear-gradient(to left, $left-color 0%, $right-color 100%) !important;
+}
+
+@mixin linear-gradient-with-middle-darkness($side-color, $middle-color) {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, $side-color),
+    color-stop(0.4, $middle-color),
+    color-stop(0.6, $middle-color),
+    color-stop(1, $side-color)
+  );
+  background-image: -o-linear-gradient(bottom, $side-color 0%, $middle-color 40%, $middle-color 60%, $side-color 100%);
+  background-image: -moz-linear-gradient(bottom, $side-color 0%, $middle-color 40%, $middle-color 60%, $side-color 100%);
+  background-image: -webkit-linear-gradient(bottom, $side-color 0%, $middle-color 40%, $middle-color 60%, $side-color 100%);
+  background-image: -ms-linear-gradient(bottom, $side-color 0%, $middle-color 40%, $middle-color 60%, $side-color 100%);
+  background-image: linear-gradient(to bottom, $side-color 0%, $middle-color 40%, $middle-color 60%, $side-color 100%);
+
+}

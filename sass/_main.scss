@@ -1,0 +1,38 @@
+body {
+	font-family: $font-base;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+input, textarea, keygen, select, button {
+	font: 14px $font-base;
+}
+
+strong {
+	font-family: $font-base-semibold;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.content {
+	position: relative;
+	margin-left: $sidebar-width;
+	min-width: 860px;
+	padding: 25px 25px 0;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+	outline:none;
+}
+
+ul {
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}

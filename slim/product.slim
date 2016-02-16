@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Lace &amp; Sean</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+
+  .wrapper
+    .sidebar
+      .logo
+        
+      ul.menu
+        li.active 
+          a href="#" Женская коллекция
+          ul
+            li 
+              a href="#" Блузки
+            li 
+              a href="#" Юбки
+            li 
+              a href="#" Жакеты
+            li 
+              a href="#" Брюки
+            li 
+              a href="#" Трикотаж
+        li 
+          a href="#" Мужская коллекция
+        li 
+          a href="#" Детская коллекция
+        li.important 
+          a href="#" Самое популярное
+
+      .cart
+        a.count href="#" 2 товара
+        ul.positions
+          li
+            .thumb
+              img src="/img/cart_position.jpg"
+            .description
+              .name Джемпер
+              .options Темно-синий / S
+              .price 3500р x 1
+            .remove &times;
+
+          li
+            .thumb
+              img src="/img/cart_position.jpg"
+            .description
+              .name Джемпер
+              .options Темно-синий / S
+              .price 3500р x 1
+            .remove &times;
+
+          .summary
+            .label Итого:
+            .price 7000 р.
+          a.button href="#" Перейти в корзину
+
+    .content.product
+      .hero.head.empty
+        .logo
+
+      h1.title Длинное платье с высокой горловиной
+      h3.price 11 899 р.
+
+      .row
+        .gallery
+          .row
+            .thumbs
+              a.thumb href="#" style="background-image: url(/img/pics/thumb1.jpg);"
+              a.thumb href="#" style="background-image: url(/img/pics/thumb2.jpg);"
+              a.thumb href="#" style="background-image: url(/img/pics/thumb3.jpg);"
+              a.thumb href="#" style="background-image: url(/img/pics/thumb4.jpg);"
+            .primary style="background-image: url(/img/pics/primary.jpg);"
+              
+        .description
+          .about
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim sem luctus nisi accumsan, et aliquet nibh vestibulum. Aliquam dictum nunc non commodo luctus. Aliquam egestas mi consequat semper tempus. Curabitur nec enim lectus. Integer iaculis sed massa nec fringilla. Fusce pharetra mi nunc, et vehicula nisi feugiat gravida. Etiam ligula dolor, aliquet a ornare ornare, consectetur a risus. Aenean iaculis libero non neque laoreet consectetur.
+
+          form
+            .colors
+              h3
+                |Цвет:&nbsp;
+                span.value Нежно-розовый
+
+              ul.picker
+                li
+                  a.color.active href="#" style="background-color: #F7E3DE"
+                li
+                  a.color href="#" style="background-color: #78D4F1"
+                li
+                  a.color href="#" style="background-color: #F1BD78"
+
+            .size.form-input
+              label for="size" Размер
+              .select-style
+                select.input name="size"
+                  option value="S" S
+                  option value="M" M
+                  option value="L" L
+
+            .count.form-input
+              label for="count" Количество
+              .counter-style
+                input.input type="number" min="1" name="count"
+                .up.arrow +
+                .down.arrow -
+
+            .measure-table
+              a href="#"
+                .icon
+                | Таблица размеров
+
+            .add-to-cart
+              a.button href="#"
+                i.fa.fa-cart-arrow-down
+                |&nbsp;Добавить в корзину
+
+            .consist
+              h3 Состав и рекомендации по уходу
+              p 100% шелк, Подкладка: 100% полиэстер
+              
+              ul.advices
+                li СТИРКА ЗАПРЕЩЕНА
+                li ОТБЕЛИВАТЬ ЗАПРЕЩЕНО
+                li ГЛАДИТЬ ЗАПРЕЩЕНО
+                li ХИМЧИСТКА ПЕРХЛОРЭТИЛЕНОМ
+                li ЗАПРЕЩЕНО СУШИТЬ В СУШИЛКЕ
+
+
+      .alsolike
+        h3 Вам также понравится:
+
+        .row
+          a.item href="#" style="background-image: url(/img/pics/small1.jpg);"
+          a.item href="#" style="background-image: url(/img/pics/small2.jpg);"
+          a.item href="#" style="background-image: url(/img/pics/small3.jpg);"
+          a.item href="#" style="background-image: url(/img/pics/small4.jpg);"
+          a.item href="#" style="background-image: url(/img/pics/small5.jpg);"
+
+      .feedback
+        .form
+          h3 Оставайтесь с нами
+          
+          form
+            .right 
+              button.button Оставаться в курсе
+            .left 
+              input type="email" placeholder="Ваш e-mail"
+      
+      footer
+        .row
+          .logo
+
+          ul.menu
+            li
+              a href="#" О нас
+            li
+              a href="#" Условия покупки и доставки
+            li
+              a href="#" Политика конфиденциальности
+            li
+              a href="#" Пресса о нас
+            li
+              a href="#" Сотрудничество
+            li
+              a href="#" Контакты
+
+          .social
+            h3 Будьте с нами
+            ul
+              li
+                a href="#"
+                  i.fa.fa-vk
+              li
+                a href="#"
+                  i.fa.fa-facebook-square
+              li
+                a href="#"
+                  i.fa.fa-instagram
+              li
+                a href="#"
+                  i.fa.fa-twitter-square
+              li
+                a href="#"
+                  i.fa.fa-youtube-square
+        .copyright
+          | &copy; EST. 2015
+
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "lace_and_sean",
+  "authors": [
+    "Andrew <block159@gmail.com>"
+  ],
+  "description": "site",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.5.0",
+    "jquery-popup-overlay": "^1.6.0",
+    "jquery": "~2.2.0"
+  }
+}

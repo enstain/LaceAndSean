@@ -1,0 +1,25 @@
+// == Setup == //
+@import "variables";
+
+// Mixins
+@import "mixins/mixins";
+@import "fonts/bebas";
+@import "fonts/opensans";
+
+// Styles
+@import "main";
+
+// Components
+@import "components/sidebar";
+@import "components/hero";
+@import "components/tags";
+@import "components/feedback";
+@import "components/category";
+@import "components/product";
+@import "components/alsolike";
+@import "components/footer";
+
+// UI
+@import "components/ui/button";
+@import "components/ui/pagination";
+@import "components/ui/form";

@@ -1,0 +1,53 @@
+// == Colors == //
+$sidebar-bg: #2F2F31;
+$menu-active: #3b3b3b;
+$menu-main-li: #FFFFFF;
+$menu-sub-li: #D5D5D5;
+
+$hero-black: #535253;
+$tag-separate: #78D4F1;
+
+$cart-position: #787878;
+$cart-position-delimiter: #E0E0E0;
+$cart-remove: #C4C4C4;
+$item-action-description: #4C4C4C;
+
+$button: #2F2F31;
+$input-border: #7C7C7C;
+$input-product-border: #545066;
+$form-title: #6D6D6D;
+
+$advices-color: #535353;
+
+// == Dimensions == //
+$sidebar-width: 285px;
+$first-tag-width: 335px;
+$padding: 25px;
+$second-tag-margin: $first-tag-width + $padding;
+
+// == Fonts == //
+$font-base: "Open Sans Regular", Helvetica, Arial, sans-serif;
+$font-base-light: "Open Sans Light", Helvetica, Arial, sans-serif;
+$font-base-semibold: "Open Sans Semibold", Helvetica, Arial, sans-serif;
+$font-bebas-book: "Bebas Neue Book", Helvetica, Arial, sans-serif;
+$font-bebas-light: "Bebas Neue Light", Helvetica, Arial, sans-serif;
+$font-bebas-regular: "Bebas Neue Regular", Helvetica, Arial, sans-serif;
+
+// == Buttons == //
+
+// == Links == //
+$img_path: "/img";
+
+$link-hero-primary: $img_path+"/pics/main.jpg";
+$link-hero-woman: $img_path+"/pics/woman.jpg";
+$link-hero-men: $img_path+"/pics/men.jpg";
+$link-hero-children: $img_path+"/pics/children.jpg";
+
+$link-logo-footer: $img_path+"/logo_footer.png";
+$link-logo-side: $img_path+"/logo_side.png";
+$link-logo-primary: $img_path+"/logo_primary.png";
+$link-logo-hero: $img_path+"/logo_hero.png";
+$link-logo-header: $img_path+"/logo_header.png";
+
+$link-icon-cart: $img_path+"/icons/cart.png";
+$link-icon-measure: $img_path+"/icons/measure.png";

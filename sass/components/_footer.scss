@@ -1,0 +1,77 @@
+footer {
+	background-color: $sidebar-bg;
+	margin-top: 50px;
+	padding: 25px 25px 25px;
+
+	.row {
+		@include clearfix;
+		position: relative;
+
+		.logo {
+			background-image: url($link-logo-footer);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			width: 157px;
+			height: 100px;
+			float: left;
+			margin-right: 50px;
+		}
+
+		.menu {
+			width: auto;
+			li {
+				line-height: 16px;
+				a {
+					text-decoration: none;
+					color: $menu-sub-li;
+					font-family: $font-bebas-book;
+					letter-spacing: 2px;
+					font-size: 12px;
+
+					&:hover {
+						color: black;
+					}
+				}
+			}
+		}
+
+		.social {
+			position: absolute;
+			top: 0;
+			right: 0;
+			text-align: right;
+			h3 {
+				margin: 0;
+				font-family: $font-bebas-book;
+				font-size: 20px;
+				color: $menu-sub-li;
+			}
+
+			ul {
+				margin-top: 10px;
+				li {
+					display: inline-block;
+					padding-left: 10px;
+					a {
+						font-size: 24px;
+						color: $menu-sub-li;
+
+						&:hover {
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		margin-top: 50px;
+		text-align: center;
+		font-size: 9px;
+		letter-spacing: 3px;
+		font-family: $font-bebas-regular;
+		color: $menu-sub-li;
+	}
+}

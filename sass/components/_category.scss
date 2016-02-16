@@ -1,0 +1,109 @@
+.category {
+	
+	.row {
+
+		.item {
+			float: left;
+			width: 23%;
+			margin-right: 2%;
+			margin-bottom: 50px;
+			position: relative;
+
+			.pic {
+				height: 355px;
+				position: relative;
+				top: 0;
+				background-size: cover;
+
+				.actions {
+					display: none;
+					position: absolute;
+					top: 0;
+					z-index: 2;
+					cursor: pointer;
+					width: 100%;
+
+					.description {
+						position: relative;
+						width: 100%;
+						text-align: center;
+						top: 10px;
+
+						h3 {
+							line-height: 20px;
+						}
+					}
+
+					.buttons {
+						position: relative;
+						top: 100px;
+						text-align: center;
+						width: 100%;
+
+						.button {
+							position: relative;
+							display: inline-block;
+							width: 150px;
+							text-align: center;
+							font-size: 11px;
+							margin-bottom: 15px;
+
+							i {
+								font-size: 16px;
+								padding-right: 5px;
+							}
+						}
+					}
+				}
+
+				&:before {
+					content: "";
+					z-index: 1;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: white;
+					opacity: 0;
+					transition: 0.3s ease all;
+				}
+
+				&:hover {
+					
+					&:before {
+						opacity: 0.9;
+					}
+
+					.actions {
+						display: block;
+					}
+				}
+			}
+
+			.description {
+				position: relative;
+
+				h3 {
+					margin: 10px 0 0;
+					font-family: $font-base-semibold;
+					font-size: 16px;
+					line-height: 25px;
+					colot: $item-action-description;
+				}
+
+				h4 {
+					margin: 0;
+					font-family: $font-base;
+					font-size: 16px;
+					color: $item-action-description;
+					font-weight: 300;
+
+					&.about {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}	
+}

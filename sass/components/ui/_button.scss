@@ -1,0 +1,13 @@
+.button {
+	display: inline-block;
+	border: 1px solid black;
+	padding: 14px;
+	text-decoration: none;
+	color: $button;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: $button;
+		color: white;
+	}
+}

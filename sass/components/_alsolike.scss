@@ -1,0 +1,59 @@
+.alsolike {
+	position: relative;
+	margin-top: 50px;
+
+	&:before {
+		content: " ";
+		display: block;
+		width: 60%;
+		margin: 0 auto;
+		height: 1px;
+		background-color: $sidebar-bg;
+	}
+
+	h3 {
+		margin: 20px 0 0;
+		font-size: 42px;
+		letter-spacing: 4px;
+		font-family: $font-bebas-book;
+		font-weight: 100;
+		text-align: center;
+		color: $sidebar-bg;
+	}
+
+	.row {
+		width: 80%;
+		margin: 25px auto;
+		@include clearfix;
+
+		.item {
+			float: left;
+			width: 15%;
+			height: 200px;
+			margin-right: 5%;
+			margin-bottom: 50px;
+			position: relative;
+			background-size: cover;
+			background-position: center center;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: black;
+				opacity: 0;
+				transition: 0.3s ease all;
+			}
+
+			&:hover {
+				
+				&:before {
+					opacity: 0.2;
+				}
+			}
+		}
+	}
+}
