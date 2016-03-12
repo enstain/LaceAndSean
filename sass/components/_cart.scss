@@ -1,0 +1,351 @@
+.cart-content {
+  @include clearfix;
+  .hero {
+    height: auto;
+    position: relative;
+    margin-bottom: 30px;
+    
+    .logo {
+      position: relative;
+    }
+  }
+
+  .title-head {
+    text-align: center;
+    margin-bottom: 30px;
+    h1 {
+      font-size: 30px;
+      letter-spacing: 0.5px;
+      font-family: $font-base-light;
+      font-weight: 100;
+      margin-bottom: 2px;
+    }
+
+    h3 {
+      margin-top: 2px;
+      font-family: $font-base-light;
+      font-weight: 100;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+    } 
+  }
+
+  .items {
+
+    @media all and (min-width: 1600px) {
+      width: 700px;
+      float: left;
+    }
+
+    .item {
+      @include clearfix;
+      .thumbnail {
+        width: 250px;
+        float: left;
+        margin-right: 25px;
+        margin-left: 25px;
+
+        img {
+          width: 100%;
+        }
+        text-align: center;
+      }
+
+      .delete {
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 5px;
+
+        &:hover {
+          color: white;
+          background-color: $tag-separate;
+        }
+      }
+
+      .description {
+        text-align: left;
+        margin-left: 300px;
+        h3 {
+          margin: 0px;
+          font-family: $font-base-semibold;
+          font-size: 16px;
+          line-height: 25px;
+          colot: $item-action-description;
+        }
+
+        h4 {
+          margin: 0;
+          font-family: $font-base;
+          font-size: 16px;
+          color: $item-action-description;
+          font-weight: 300;
+
+          &.about {
+            margin-bottom: 10px;
+          }
+        }
+
+        .options {
+          margin-top: 25px;
+          border-top: 1px solid $item-action-description;
+          padding-top: 25px;
+        }
+
+        .colors {
+          margin-bottom: 25px;
+
+          h3 {
+            font-family: $font-base;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: $item-action-description;
+
+            span {
+              text-transform: none;
+            }
+          }
+
+          .picker {
+            li {
+              display: inline-block;
+              margin-right: 10px;
+
+              a {
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+
+                &.active {
+                  width: 28px;
+                  height: 28px;
+                  border: 2px solid $sidebar-bg;
+                }
+              }
+            }
+          }
+        }
+
+        .form-input {
+          height: 50px;
+          margin-bottom: 20px;
+          @include clearfix;
+
+          label {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            line-height: 50px;
+            width: 190px;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: -4px;
+          }
+
+          .input {
+            width: 160px;
+            border: 1px solid $input-product-border;
+          }
+
+          &.size {
+            
+            .select-style {
+              display: inline-block;
+              padding: 0;
+              margin: 0;
+              border: 1px solid $input-product-border;
+              overflow: hidden;
+              background-color: #fff;
+              background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 95% 50%;
+            }
+
+            .input {
+              padding: 15px 10px;
+              border: none;
+              width: 164px;
+                box-shadow: none;
+                background-color: transparent;
+                background-image: none;
+                -webkit-appearance: none;
+                   -moz-appearance: none;
+                        appearance: none;
+
+                &:focus {
+                  outline: none;
+                }
+            }
+          }
+
+          &.count {
+            .counter-style {
+              display: inline-block;
+              position: relative;
+              
+              input[type=number]::-webkit-inner-spin-button, 
+              input[type=number]::-webkit-outer-spin-button { 
+                -webkit-appearance: none; 
+                margin: 0; 
+              }
+
+              .input {
+                height: 47px;
+                width: 154px;
+                padding-left: 10px;
+                border: 1px solid $input-product-border;
+              }
+
+              .arrow {
+                border: 1px solid $input-product-border;
+                width: 24px;
+                height: 24px;
+                text-align: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+
+                &.down {
+                  top: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .delivery {
+    width: 500px;
+    margin: 10px auto;
+
+    @media all and (min-width: 1600px) {
+      margin-left: 800px;
+      width: auto;
+    }
+
+    .title {
+      background-color: $tag-separate;
+      color: white;
+      line-height: 60px;
+      font-family: $font-base-light;
+      font-size: 18px;
+      font-weight: 100;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .row {
+      @include clearfix;
+      .form-input {
+        float: left;
+        width: 26%;
+        margin-right: 11%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .form-input {
+      margin-bottom: 15px;
+
+      .select-style {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        border: 1px solid $input-product-border;
+        width: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 95% 50%;
+
+        .input {
+          padding: 15px 10px;
+          border: none;
+          box-shadow: none;
+          background-color: transparent;
+          background-image: none;
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .input {
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+         box-sizing: border-box; 
+        height: 47px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid $input-product-border;
+        width: 100%;
+
+        @include placeholder {
+          font-family: $font-base-light;
+          font-size: 16px;
+          font-weight: 100;
+          color: $item-action-description;
+          line-height: 16px;
+          transition: line-height 0.5s ease;
+        }
+
+        @include focused-placeholder {
+          font-family: $font-base-light;
+          font-size: 16px;
+          font-weight: 100;
+          color: $item-action-description;
+          transition: line-height 0.5s ease;
+          line-height: 200px;
+        }
+      }
+    }
+
+    .summary {
+      h3 {
+        font-size: 18px;
+        color: white;
+        background-color: $item-action-description;
+        line-height: 60px;
+        padding: 0 25px;
+        @include clearfix;
+        .left-cell {
+          float: left;
+        }
+
+        .right-cell {
+          float: right;
+        }
+      }
+    }
+
+    .process-checkout {
+      -moz-box-sizing: border-box; 
+      -webkit-box-sizing: border-box; 
+      box-sizing: border-box; 
+      text-align: center;
+      font-size: 18px;
+      line-height: 32px;
+      width: 100%;
+      position: relative;
+
+      i {
+        font-size: 32px;
+        font-weight: 100;
+        position: absolute;
+        right: 30px;
+      }
+    }
+  }
+}

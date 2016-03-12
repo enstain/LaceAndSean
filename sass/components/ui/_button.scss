@@ -10,4 +10,14 @@
 		background-color: $button;
 		color: white;
 	}
+
+	&.blue {
+		background-color: $tag-separate;
+		border: none;
+		color: white;
+
+		&:hover {
+			background-color: $sidebar-bg;
+		}
+	}
 }

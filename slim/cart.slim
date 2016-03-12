@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Lace &amp; Sean</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+</head>
+<body>
+
+  .wrapper
+    .sidebar
+      .logo
+        
+      ul.menu
+        li.active 
+          a href="#" Женская коллекция
+          ul
+            li 
+              a href="#" Блузки
+            li 
+              a href="#" Юбки
+            li 
+              a href="#" Жакеты
+            li 
+              a href="#" Брюки
+            li 
+              a href="#" Трикотаж
+        li 
+          a href="#" Мужская коллекция
+        li 
+          a href="#" Детская коллекция
+        li.important 
+          a href="#" Самое популярное
+
+      .cart
+        a.count href="#" 2 товара
+        ul.positions
+          li
+            .thumb
+              img src="/img/cart_position.jpg"
+            .description
+              .name Джемпер
+              .options Темно-синий / S
+              .price 3500р x 1
+            .remove &times;
+
+          li
+            .thumb
+              img src="/img/cart_position.jpg"
+            .description
+              .name Джемпер
+              .options Темно-синий / S
+              .price 3500р x 1
+            .remove &times;
+
+          .summary
+            .label Итого:
+            .price 7000 р.
+          a.button href="#" Перейти в корзину
+
+    .content.cart-content
+      .hero.head
+        .logo
+
+      .title-head
+        h1 Корзина
+        h3
+          |В вашей корзине&nbsp;
+          span 2 товара
+
+      .items.row
+        .item
+          .thumbnail
+            img src="/img/pics/1.jpg"
+            button.delete 
+              i.fa.fa-trash-o
+              |&nbsp;Удалить
+          .description
+            h3.title By Weave
+            h4 Вечернее платье
+            h4 3.500
+            .options
+              .colors
+                h3
+                  |Цвет:&nbsp;
+                  span.value Нежно-розовый
+
+                ul.picker
+                  li
+                    a.color.active href="#" style="background-color: #F7E3DE"
+                  li
+                    a.color href="#" style="background-color: #78D4F1"
+                  li
+                    a.color href="#" style="background-color: #F1BD78"
+
+              .size.form-input
+                label for="size" Размер
+                .select-style
+                  select.input name="size"
+                    option value="S" S
+                    option value="M" M
+                    option value="L" L
+
+              .count.form-input
+                label for="count" Количество
+                .counter-style
+                  input.input type="number" min="1" name="count"
+                  .up.arrow +
+                  .down.arrow -
+
+      .delivery
+        h3.title Доставка
+        form
+          .form-input
+            .select-style
+              select.input name="delivery-type" required="true"
+                option value="" Выберите способ доставки...
+                option value="post" Почтовое отправление
+                option value="ems" Транспортное отправление
+                option value="courier" Курьерская доставка
+                option value="self" Самовывоз
+          .form-input
+            input.input name="fio" type="text" placeholder="ФИО"
+          .form-input
+            input.input name="city" type="text" placeholder="Город"
+          .form-input
+            input.input name="street" type="text" placeholder="Улица"
+          .row
+            .form-input
+              input.input name="house" type="text" placeholder="Дом"
+            .form-input
+              input.input name="building" type="text" placeholder="Корп."
+            .form-input
+              input.input name="flat" type="text" placeholder="Квартира"
+          .form-input
+            input.input name="postal" type="text" placeholder="Индекс"
+          .form-input
+            input.input name="phone" type="text" placeholder="Номер телефона"
+          .form-input
+            input.input name="email" type="text" placeholder="E-mail"
+
+        .summary
+          h3 
+            span.left-cell Общая стоимость:
+            span.right-cell 7000 р.
+        
+        a.button.blue.process-checkout href="#" 
+          |Перейти к оплате
+          i.fa.fa-angle-right
+
+      footer
+        .row
+          .logo
+
+          ul.menu
+            li
+              a href="#" О нас
+            li
+              a href="#" Условия покупки и доставки
+            li
+              a href="#" Политика конфиденциальности
+            li
+              a href="#" Пресса о нас
+            li
+              a href="#" Сотрудничество
+            li
+              a href="#" Контакты
+
+          .social
+            h3 Будьте с нами
+            ul
+              li
+                a href="#"
+                  i.fa.fa-vk
+              li
+                a href="#"
+                  i.fa.fa-facebook-square
+              li
+                a href="#"
+                  i.fa.fa-instagram
+              li
+                a href="#"
+                  i.fa.fa-twitter-square
+              li
+                a href="#"
+                  i.fa.fa-youtube-square
+        .copyright
+          | &copy; EST. 2015
+
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+</body>
+</html>
